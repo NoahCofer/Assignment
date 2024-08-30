@@ -1,0 +1,116 @@
+/* styles.css */
+
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0; /* Light grey background */
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar-default {
+    background: linear-gradient(45deg, #b0b0b0, #d0d0d0); /* Neutral light grey gradient */
+    border: none;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000 !important; /* Black text */
+}
+
+.navbar-toggle {
+    border: none;
+    background-color: #fff;
+}
+
+    .navbar-toggle .icon-bar {
+        background-color: #000; /* Black for the toggle bars */
+    }
+
+/* Page Heading Styling */
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #000; /* Black text */
+    text-transform: uppercase;
+}
+
+/* Section Styling */
+.container-fluid {
+    padding: 20px 0;
+}
+
+.col-xs-12 {
+    padding: 20px;
+    border-radius: 10px;
+    background-clip: border-box;
+    transition: transform 0.3s ease, z-index 0.3s ease; /* Smooth enlarge on hover */
+    position: relative;
+    z-index: 1; /* Base z-index */
+    background: #dcdcdc; /* Neutral light color for sections */
+    color: #000; /* Black text */
+}
+
+    .col-xs-12:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        z-index: 10; /* Bring to front on hover */
+    }
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #000; /* Black text */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000; /* Black text */
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+/* Media Queries */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .col-xs-12 {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    .col-sm-6 {
+        padding: 15px;
+    }
+}
